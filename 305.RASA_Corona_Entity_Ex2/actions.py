@@ -14,7 +14,6 @@ from rasa_sdk.executor import CollectingDispatcher
 import requests
 
 
-
 # from rasa_sdk.events import SlotSet
 #
 # class ActionHelloWorld(Action):
