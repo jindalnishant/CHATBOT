@@ -1,0 +1,39 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- country_entry
+- name_entry
+
+entities:
+- name
+- country
+
+slots:
+  name:
+    type: text
+  country:
+    type: text
+
+responses:
+  utter_greet:
+  - text: Hey! Please provide your name?
+
+  utter_enter_country:
+  - text: Hey! Please provide your country name?
+
+  utter_display_details:
+  - text: "Your name is {name} and you belong to {country} !"
+
+  utter_goodbye:
+  - text: "Bye"
+
+actions:
+- action_check_weather
